@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>297335644996-to578ec4lf2c3hsdg1fghgrdoir2f0sp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.297335644996-to578ec4lf2c3hsdg1fghgrdoir2f0sp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDLTusu-lEq2_BgDsAwmY-DEtCKb5ZYKNc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>297335644996</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.tourismwilur</string>
+	<key>PROJECT_ID</key>
+	<string>tourismwilurtaller</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tourismwilurtaller.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:297335644996:ios:08b420bb62d3a9dea3ad11</string>
+</dict>
+</plist>

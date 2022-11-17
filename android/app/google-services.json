@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "189286097072",
+    "project_id": "tourismwilur",
+    "storage_bucket": "tourismwilur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189286097072:android:81d8b5262186da5ca31b75",
+        "android_client_info": {
+          "package_name": "com.example.tourismwilur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189286097072-vp26lem63n927157mbmrdjgnjcddc84a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqPgFq87GgbJelNb--0MUwQRwOvN1eqTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189286097072-vp26lem63n927157mbmrdjgnjcddc84a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "189286097072-r5c14s671rvgoj469tit1nhs72k21oid.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tourismwilur"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
