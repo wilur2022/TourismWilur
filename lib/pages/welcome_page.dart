@@ -37,6 +37,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 return Card(
                   child: ListTile(
                     title: Text(site['name']),
+                    subtitle: Text(site["location"]),
                   ),
                 );
               },

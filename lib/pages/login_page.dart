@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tourismwilur/pages/new_tourist_site.dart';
+import 'package:tourismwilur/pages/admon_sites.dart';
 import 'package:tourismwilur/pages/welcome_page.dart';
 import '../repository/firebase_api.dart';
 import 'register_page.dart';
@@ -14,6 +14,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+
   final FirebaseApi _firebaseApi = FirebaseApi();
   final _email = TextEditingController();
   final _password = TextEditingController();
@@ -46,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
         message= "Usuario NO Registrado. Registrate dando CLICK en Registrarse";
       }else if(_email.text=='wilsonurbano2011@hotmail.com'){
         // ignore: use_build_context_synchronously
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const NewTouristSites()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const AdmonSites()));
       }else{
         message = "BIENVENIDO A TURISMO FACIL";
         // ignore: use_build_context_synchronously
@@ -64,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("TURISMO WILUR"),
+          title: const Text("TURISMO ONLINE"),
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),

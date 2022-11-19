@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tourismwilur/touristSites/iglesia_san_francisco.dart';
+import 'package:tourismwilur/touristSites/parque_quijote.dart';
+import '../touristSites/puente_humilladero.dart';
 import '../touristSites/virgen_lajas.dart';
 import '../touristSites/virgen_playa.dart';
 import 'login_page.dart';
@@ -34,7 +37,30 @@ class MenuWelcome extends StatelessWidget {
                 textColor: Colors.green,
                 onTap: (){
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const VirgenPlaya()));
-
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.church_outlined, size: 20, color: Colors.lightBlue,),
+                title: const Text("Parque Don Quijote", style: TextStyle(fontSize: 20),),
+                textColor: Colors.green,
+                onTap: (){
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const ParqueQuijote()));
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.church_outlined, size: 20, color: Colors.lightBlue,),
+                title: const Text("Iglesia San Francisco", style: TextStyle(fontSize: 20),),
+                textColor: Colors.green,
+                onTap: (){
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const IglesiaSanFrancisco()));
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.church_outlined, size: 20, color: Colors.lightBlue,),
+                title: const Text("Puente del Humilladero", style: TextStyle(fontSize: 20),),
+                textColor: Colors.green,
+                onTap: (){
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PuenteHumilladero()));
                 },
               ),
               ListTile(

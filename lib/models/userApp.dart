@@ -5,9 +5,13 @@ class UserApp{
   var _phone;
   var _email;
   var _password;
+  var _nationality;
+  var  _tourismFavorites = [];
+  var _dateVacations;
 
   //Constructor
-  UserApp(this._uid, this._name, this._phone, this._email, this._password);
+  UserApp(this._uid, this._name, this._phone, this._email, this._password, this._nationality,
+      this._tourismFavorites, this._dateVacations);
 
   //Constructor Empty
   UserApp.Empty();
@@ -19,14 +23,20 @@ class UserApp{
         _name = json['name'],
         _phone = json['phone'],
         _email = json['email'],
-        _password = json['password'];
+        _password = json['password'],
+        _nationality = json['nationality'],
+        _tourismFavorites = json['tourismFavorites'],
+        _dateVacations = json['dateVacations'];
 
   Map<String, dynamic> toJson() => {
     'uid' : _uid,
     'name' : _name,
     'phone' : _phone,
     'email' : _email,
-    'password' : _password
+    'password' : _password,
+    'nationality' : _nationality,
+    'tourismFavorites' : _tourismFavorites,
+    'dateVacations' : _dateVacations
   };
 
   //Getters and Setters
@@ -34,6 +44,24 @@ class UserApp{
 
   set uid(value) {
     _uid = value;
+  }
+
+  get dateVacations => _dateVacations;
+
+  set dateVacations(value) {
+    _dateVacations = value;
+  }
+
+  get tourismFavorites => _tourismFavorites;
+
+  set tourismFavorites(value) {
+    _tourismFavorites = value;
+  }
+
+  get nationality => _nationality;
+
+  set nationality(value) {
+    _nationality = value;
   }
 
 

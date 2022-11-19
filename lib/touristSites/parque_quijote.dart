@@ -2,20 +2,22 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../pages/menu_site.dart';
 
-class VirgenLajas extends StatefulWidget {
-  const VirgenLajas({Key? key}) : super(key: key);
+
+class ParqueQuijote extends StatefulWidget {
+  const ParqueQuijote({Key? key}) : super(key: key);
 
   @override
-  State<VirgenLajas> createState() => _VirgenLajasState();
+  State<ParqueQuijote> createState() => _ParqueQuijoteState();
 }
 
-class _VirgenLajasState extends State<VirgenLajas> {
+class _ParqueQuijoteState extends State<ParqueQuijote> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Santuario de la Virgen de las Lajas",textAlign:TextAlign.center,style: TextStyle(
+        title: const Text("PARQUE DON QUIJOTE",textAlign:TextAlign.center,style: TextStyle(
           color: Colors.white,
           fontSize: 16,
 
@@ -27,7 +29,7 @@ class _VirgenLajasState extends State<VirgenLajas> {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
           child: StreamBuilder<QuerySnapshot>(
             stream: FirebaseFirestore.instance
-                .collection("TouristSites").where('idTs', isEqualTo: "VDLL")
+                .collection("TouristSites").where('idTs', isEqualTo: "PDQ")
                 .snapshots(),
             builder: (context, snapshot) {
               if (!snapshot.hasData) return const Text('Loading');
@@ -62,8 +64,8 @@ class _VirgenLajasState extends State<VirgenLajas> {
                     endIndent: 10,
                     color: Colors.tealAccent,
                   ),
-                  const Text("PANORÁMICA NOCTURNA DEL SANTUARIO",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
-                  Image.network(site['photos'][2]),
+                  const Text("ESCULTURA CENTRAL DEL PARQUE",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
+                  Image.network("https://firebasestorage.googleapis.com/v0/b/tourismwilur.appspot.com/o/ParqueQuijote%2Fparque3.jpg?alt=media&token=93c90906-3694-429d-b943-35892ab76f9a"),
                   const Divider(
                     height: 25,
                     thickness: 5,
@@ -71,8 +73,8 @@ class _VirgenLajasState extends State<VirgenLajas> {
                     endIndent: 10,
                     color: Colors.tealAccent,
                   ),
-                  const Text("ALTAR PRINCIPAL DEL SANTUARIO",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
-                  Image.network(site['photos'][3]),
+                  const Text("FOTO PARQUE LATERAL",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
+                  Image.network("https://firebasestorage.googleapis.com/v0/b/tourismwilur.appspot.com/o/ParqueQuijote%2Fparque2.jpg?alt=media&token=a45acf1e-dbe1-4348-91dc-05f8e2b67c8f"),
                   const Divider(
                     height: 25,
                     thickness: 5,
@@ -80,8 +82,8 @@ class _VirgenLajasState extends State<VirgenLajas> {
                     endIndent: 10,
                     color: Colors.tealAccent,
                   ),
-                  const Text("PANORÁMICA FRONTAL DEL SANTUARIO",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
-                  Image.network(site['photos'][1])
+                  const Text("FOTO CENTRAL DEL PARQUE",textAlign:TextAlign.center,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.pink)),
+                  Image.network("https://firebasestorage.googleapis.com/v0/b/tourismwilur.appspot.com/o/ParqueQuijote%2Fparque1.jpg?alt=media&token=e3b420fc-b7bc-4b7a-a401-c4d592c7ca4f")
 
                 ],
               );
